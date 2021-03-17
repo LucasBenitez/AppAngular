@@ -1,0 +1,44 @@
+<!-- Default form register -->
+<app-header></app-header>
+<div class="container  mt-5 d-flex justify-content-center align-items-center p-3 ">
+  <div class="col-s p-3">
+<form class="text-center border border-light p-5">
+    <h3 class="mb-3">Registro</h3>
+    <h5>¿Ya tenés cuenta? <a routerLink="/login" routerLinkActive="active">Clic aquí</a></h5>
+<hr> 
+    <!-- E-mail -->
+    <input
+    class="form-control mb-4"
+    type="email"
+    [(ngModel)]="email"
+    name="email"
+    placeholder="Ingresá tu email"
+    required="required"
+  />
+    <!-- Password -->
+    <input
+        class="form-control  mb-4"
+        type="password"
+        [(ngModel)]="password"
+        name="password"
+        placeholder="Ingresá tu contraseña"
+        required="required"
+      />
+      <input
+        class="form-control"
+        type="password"
+        [(ngModel)]="confirmPassword"
+        name="password"
+        placeholder="Confirme su contraseña"
+        required="required"
+      />
+
+    <!-- Sign up button -->
+    <button mdbBtn color="info" block="true" class="my-4" type="submit" (click)="register()">Registrarse</button>
+ 
+
+  </form>
+
+</div>
+</div>
+  <!-- Default form register -->
